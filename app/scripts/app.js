@@ -1,5 +1,4 @@
 import '../scss/style.scss';
-import 'lazysizes';
 import MobileMenu from './MobileMenu';
 import RevealOnScroll from './RevealOnScroll';
 
@@ -10,5 +9,6 @@ new MobileMenu();
 // RevealOnScroll
 new RevealOnScroll(document.querySelectorAll('.members-item'));
 
-
-
+if (module.hot) {
+    module.hot.accept();
+}
