@@ -1,4 +1,5 @@
 import '../scss/style.scss';
+import 'lazysizes';
 import MobileMenu from './MobileMenu';
 import RevealOnScroll from './RevealOnScroll';
 
