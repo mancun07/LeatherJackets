@@ -1,0 +1,28 @@
+
+
+// 2. Plugins
+@import 'vendors/plugins';
+
+// 3. Utilities
+@import 'utilities/utilities';
+
+// 4. Layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// 5. Components
+
+// 6. Pages
+@import 'pages/home';
+@import 'pages/news';
+@import 'pages/photos';
+@import 'pages/video';
+
+
+
+
+// 7. Media
+@import 'layout/mymedia';
+
+
+
