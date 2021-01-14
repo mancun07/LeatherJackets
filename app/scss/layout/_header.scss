@@ -71,7 +71,35 @@
 
 .sidenav-trigger {
     display: none;
+    content: "";
+    background: #fff;
+    height:2px;
+    width: 20px;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        background: #fff;
+        height:2px;
+        width: 20px;
+        position: absolute;
+        top:5px;
+        cursor: pointer;
+    }
+
+    &::after {
+        content: "";
+        background: #fff;
+        height:2px;
+        width: 20px;
+        position: absolute;
+        bottom:5px;
+        cursor: pointer;
+    }
 }
+
+
 
 .sidenav {
     height:0;
