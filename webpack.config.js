@@ -1,22 +1,25 @@
 const currentTask = process.env.npm_lifecycle_event;
-// const {HTMLWebpackPlugin} = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// const HTMLWebpackPlugin = require('html-webpack-plugin');
+// const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+// const {WebpackManifestPlugin} = require('webpack-manifest-plugin');
+
+
 
 const config = {
     entry: './app/scripts/app.js',
     output: {
         filename: 'bundled.js',
-        path: path.resolve(__dirname, 'app')
+        path: path.resolve(__dirname, 'docs')
     },
     devServer: {
-        contentBase: path.join(__dirname, '/app'),
+        contentBase: path.join(__dirname, 'docs'),
         hot: true
         // host: '0.0.0.0'
     },
     mode: 'development',
-    plugins: [],
+    plugins: [ ],
     module: {
         rules: [
             {
@@ -26,17 +29,23 @@ const config = {
             {
                 test: /\.(png|jpg)$/,
                 loader: 'url-loader'
+            },
+            {
+                test: /\.js$/,
+                exclude: /(node_modules)/,
+                use: {
+                  loader: "babel-loader",
+                  options: {
+                    presets: [ "@babel/preset-env" ]
+                  }
             }
-        ]
     }
+    ]
+}
 }
 
 
 if (currentTask == 'build') {
-    config.output = {
-        filename: 'bundled.js',
-        path: path.resolve(__dirname, 'dist')
-    },
 
     config.mode = 'production',
     config.module.rules[0].use[0] = MiniCssExtractPlugin.loader;
@@ -45,5 +54,18 @@ if (currentTask == 'build') {
 }
 
 
-
 module.exports = config;
+
+
+        // new HTMLWebpackPlugin({
+        //     filename: 'index.html',
+        //     template: './app/index.html'}),
+        // new HTMLWebpackPlugin({
+        //     filename: 'news.html',
+        //     template: './app/news.html'}),
+        // new HTMLWebpackPlugin({
+        //     filename: 'photos.html',
+        //     template: './app/photos.html'}),
+        // new HTMLWebpackPlugin({
+        //         filename: 'video.html',
+        //         template: './app/video.html'})
