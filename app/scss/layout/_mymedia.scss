@@ -57,10 +57,11 @@
     .navbar-wrapper {
         height: 55px;
         padding:10px;
+        position: fixed;
     }
 
     .navbar-wrapper__about-us {
-        position: relative;
+        position: fixed;
         background:#333 linear-gradient(180deg,#000 0,rgba(0,0,0,0) 100%);
     }
 

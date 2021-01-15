@@ -4,13 +4,13 @@ class MobileMenu {
             this.sidenavTrigger = document.querySelector('.sidenav-trigger');
             this.sidenav = document.querySelector('.sidenav');
             this.windowWidth = document.body.offsetWidth;
-            this.window = window;
+            this.window = document.querySelector('window');
             this.events();
         }
 
         events() {
             this.sidenavTrigger.addEventListener('click', () => this.toggleMenu());
-            window.addEventListener('resize', () => this.handleWidth());
+            this.window.addEventListener('resize', () => this.handleWidth());
         }
         
         toggleMenu() {
