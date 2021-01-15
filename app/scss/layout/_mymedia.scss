@@ -45,7 +45,11 @@
 @media (max-width: 587px) {
 
     .news-page__main, .video-page__main, .photo-page__main {
-        margin-top:90px;
+        margin-top:50px;
+    }
+
+    .swiper-container {
+        margin-top:50px;
     }
 
     .sidenav__nav__menu {
