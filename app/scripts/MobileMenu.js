@@ -10,7 +10,7 @@ class MobileMenu {
 
         events() {
             this.sidenavTrigger.addEventListener('click', () => this.toggleMenu());
-            this.window.addEventListener('resize', () => this.handleWidth());
+            window.addEventListener('resize', () => this.handleWidth());
         }
         
         toggleMenu() {
