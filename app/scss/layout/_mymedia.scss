@@ -44,9 +44,19 @@
 
 @media (max-width: 587px) {
 
+    .news-page__main, .video-page__main, .photo-page__main {
+        margin-top:90px;
+    }
+
+    .sidenav__nav__menu {
+        margin-top: 50px;
+    }
+
     .sidenav-trigger {
         display: block;
     }
+
+
  
     .news-item {
         flex-basis: 100%;
@@ -64,6 +74,7 @@
         position: fixed;
         background:#333 linear-gradient(180deg,#000 0,rgba(0,0,0,0) 100%);
     }
+
 
     .navbar {
         flex-direction: row;
