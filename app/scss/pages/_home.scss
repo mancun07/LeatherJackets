@@ -1,8 +1,4 @@
 
-main {
-    color: black;
-}
-
 html, body.about-page {
     position: relative;
     height: 100%;
@@ -10,7 +6,7 @@ html, body.about-page {
 }
 
 .about-page__main {
-    background: linear-gradient(360deg, #020024, #1b1b2a);
+    background: linear-gradient(360deg, $primaryColor, $secondaryColor);
 }
 
 .about-us-wrapper {
@@ -28,7 +24,6 @@ html, body.about-page {
         flex-basis: 65%;
         padding:20px;
         line-height: 1.8;
-        // font-size:14px;
     }
 
     &__socials {
@@ -104,8 +99,8 @@ html, body.about-page {
 
 .reveal-item {
     opacity: 0;
-    transform: translateX(-200px);
-    transition: all 0.6s ease-out;
+    transform: translateX(-400px);
+    transition: all 0.8s ease-out;
 }
 
 .reveal-item--visible {

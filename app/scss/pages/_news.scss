@@ -1,7 +1,6 @@
 
 .news-page {
     background: url('/app/img/main.jpg') no-repeat;
-    // background: url('~main.jpg') no-repeat;
     background-position: center top;
     background-attachment: fixed;
     background-size: cover;
@@ -24,12 +23,12 @@
 
 
 .news-wrapper {
-    background: rgba(255,0,0,0.5);
+    // background: rgba(255,0,0,0.5);
+    background:$secondaryColor;
     opacity: 0.95;
     padding: 10px;
     margin: 30px 0;
     color:#fff;
-    transition: all 0.3s ease;
 }
 
 .news {

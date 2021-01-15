@@ -1,11 +1,6 @@
 const currentTask = process.env.npm_lifecycle_event;
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const HTMLWebpackPlugin = require('html-webpack-plugin');
-// const {CleanWebpackPlugin} = require('clean-webpack-plugin');
-// const {WebpackManifestPlugin} = require('webpack-manifest-plugin');
-
-
 
 const config = {
     entry: './app/scripts/app.js',
@@ -16,7 +11,7 @@ const config = {
     devServer: {
         contentBase: path.join(__dirname, 'docs'),
         hot: true
-        // host: '0.0.0.0'
+    //    host: '0.0.0.0'
     },
     mode: 'development',
     plugins: [ ],
@@ -69,3 +64,11 @@ module.exports = config;
         // new HTMLWebpackPlugin({
         //         filename: 'video.html',
         //         template: './app/video.html'})
+
+
+// const HTMLWebpackPlugin = require('html-webpack-plugin');
+// const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+// const {WebpackManifestPlugin} = require('webpack-manifest-plugin');
+
+
+

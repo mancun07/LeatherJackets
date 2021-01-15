@@ -16,9 +16,11 @@
     }
 
     .navbar__nav {
-        flex-direction: column;
+        flex-direction: row;
 
         &__socials {
+            display: flex;
+            align-items: center;
 
             ul {
                 justify-content: center;
@@ -106,6 +108,11 @@
     .about-us__desc {
         text-align: justify;
         line-height: 1.6;
+    }
+
+    .news-wrapper {
+        opacity:1;
+        position: relative;
     }
 
 }
