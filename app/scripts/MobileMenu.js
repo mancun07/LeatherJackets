@@ -6,14 +6,14 @@ class MobileMenu {
             this.sidenav = document.querySelector('.sidenav');
             this.windowWidth = document.body.offsetWidth;
             this.window = document.querySelector('window');
-            this.navbar = document.querySelector('.navbar-wrapper');
+            // this.navbar = document.querySelector('.navbar-wrapper');
             this.events();
         }
 
         events() {
             this.sidenavTrigger.addEventListener('click', () => this.toggleMenu());
             // this.window.addEventListener('resize', () => this.handleWidth());
-            window.addEventListener('scroll', () => this.handleNavbar());
+            // window.addEventListener('scroll', () => this.handleNavbar());
         }
 
         // handleNavbar() {
@@ -33,11 +33,11 @@ class MobileMenu {
             this.sidenav.classList.toggle('sidenav-is-active');
         }
 
-        handleWidth() {
-            if (this.windowWidth > 587) {
-                this.sidenav.classList.remove('sidenav-is-active');
-            }
-        }
+        // handleWidth() {
+        //     if (this.windowWidth > 587) {
+        //         this.sidenav.classList.remove('sidenav-is-active');
+        //     }
+        // }
         
     }
 

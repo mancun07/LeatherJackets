@@ -44,17 +44,17 @@
 
 @media (max-width: 587px) {
 
-    .news-page__main, .video-page__main, .photo-page__main {
-        margin-top:50px;
-    }
+    // .news-page__main, .video-page__main, .photo-page__main {
+    //     margin-top:50px;
+    // }
 
-    .swiper-container {
-        margin-top:50px;
-    }
+    // .swiper-container {
+    //     margin-top:50px;
+    // }
 
-    .sidenav__nav__menu {
-        margin-top: 50px;
-    }
+    // .sidenav__nav__menu {
+    //     margin-top: 50px;
+    // }
 
     .sidenav-trigger {
         display: block;
@@ -71,11 +71,10 @@
     .navbar-wrapper {
         height: 50px;
         padding:10px;
-        position: fixed;
     }
 
     .navbar-wrapper__about-us {
-        position: fixed;
+        position: relative;
         background:#333 linear-gradient(180deg,#000 0,rgba(0,0,0,0) 100%);
     }
 
