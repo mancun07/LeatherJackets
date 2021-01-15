@@ -50,6 +50,7 @@
  
     .news-item {
         flex-basis: 100%;
+        padding-top: 20px;
         border-bottom: 2px dashed #fff;   
     }
 
@@ -97,7 +98,7 @@
     
     }
 
-    .about-page__main {
+    .about-page__main, .news-page__main {
         font-size: 20px;
     }
 
