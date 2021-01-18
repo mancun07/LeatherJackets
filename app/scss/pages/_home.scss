@@ -85,6 +85,10 @@ html, body.about-page {
     align-items: center;
     margin-bottom: 30px;
 
+    &:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+
     &__image img {
         transition: 0.3s;
 

@@ -99,6 +99,10 @@
 
     .members-item {
         flex-direction: column;
+
+        &:nth-of-type(even) {
+            flex-direction: column;
+        }
     }
 
     .photos-wrapper {
