@@ -1,5 +1,7 @@
 body.photos-page {
     background: $secondaryColor;
+    padding-bottom: 200px;
+    position: relative;
 }
 
 
@@ -28,10 +30,11 @@ body.photos-page {
 
 }
 
-.footer-fixed {
-    position: fixed;
+.footer-bottom {
+    position: absolute;
     width: 100%;
     bottom: 0;
+
 }
 
 
